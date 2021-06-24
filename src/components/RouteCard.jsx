@@ -68,7 +68,6 @@ function RouteCard() {
                                             <Row>
                                                 <Col className="d-flex row">
                                                     <ListGroup className="list-group-flush">
-                                                        {console.log(parseFloat(route.timeStart))}
                                                         <ListGroupItem>Körsträcka: {parseFloat(route.distance).toFixed(2)}km</ListGroupItem>
                                                         <ListGroupItem>tid för start: <Moment parse="YYYY-MM-DD HH:mm:ss" format="YYYY/MM/DD/hh:mm:ss">{route.timeStart}</Moment></ListGroupItem>
                                                         <ListGroupItem>kostnad: {parseFloat(route.cost).toFixed(2)} SEK</ListGroupItem>
