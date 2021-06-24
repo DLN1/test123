@@ -9,7 +9,7 @@ function RouteCard() {
     const [loading, setLoading] = useState(true);
 
     useEffect(async () => {
-        const response = await fetch("http://localhost:3000/api/api.php/");
+        const response = await fetch("https://sheltered-tundra-31780.herokuapp.com/api/api.php/");
         const data = await response.json();
 
 
